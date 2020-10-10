@@ -1,7 +1,6 @@
 import React from 'react';
-import { useTheme } from '@material-ui/core/styles';
 import {
-  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 import Title from './Title';
 
@@ -29,7 +28,6 @@ const data = [
   },
 ];
 export default function Chart() {
-  const theme = useTheme();
 
   return (
     <React.Fragment>
