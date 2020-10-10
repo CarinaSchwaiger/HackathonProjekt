@@ -24,7 +24,7 @@ export default function Header(props) {
             <MenuIcon />
           </IconButton>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={props.classes.title}>
-            {props.title}
+            {"Verbalize " + props.title}
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">

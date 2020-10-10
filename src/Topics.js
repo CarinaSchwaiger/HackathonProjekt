@@ -35,17 +35,16 @@ export default function Topics() {
                             Smalltalk
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
+                            Lerne dich über das Wohlbefinden deiner Gesprächspartnerin zu erkunden und häufige Fragen mit Bravour zu meistern.
                         </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
                     <Button size="small" color="primary">
-                        Share
+                        Mehr Informationen
                     </Button>
                     <Button size="small" color="primary">
-                        Learn More
+                        Lernen
                     </Button>
                 </CardActions>
             </Card>
@@ -65,17 +64,16 @@ export default function Topics() {
                             Reisen
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
+                            Lerne über deinen Sommerurlaub alle Details von der Farbe des Wassers bis zum Geschmack deines Lieblingscocktails zu berichten.
                         </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
                     <Button size="small" color="primary">
-                        Share
+                        Mehr Informationen
                     </Button>
                     <Button size="small" color="primary">
-                        Learn More
+                        Lernen
                     </Button>
                 </CardActions>
             </Card>
@@ -95,17 +93,16 @@ export default function Topics() {
                             Wetter
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
+                            Setze eine Wolke, beschreibe das Wetter auf das Grad genau und erfahre ob du heute einen Regenschirm benötigst.
                         </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
                     <Button size="small" color="primary">
-                        Share
+                        Mehr Informationen
                     </Button>
                     <Button size="small" color="primary">
-                        Learn More
+                        Lernen
                     </Button>
                 </CardActions>
             </Card>
@@ -125,17 +122,16 @@ export default function Topics() {
                             Essen
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                            across all continents except Antarctica
+                            Erfahre alles über verschiedene Gewürze und Geschmacksrichtungen und lerne dein letztes Essen perfekt zu beschreiben.
                         </Typography>
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
                     <Button size="small" color="primary">
-                        Share
+                        Mehr Informationen
                     </Button>
                     <Button size="small" color="primary">
-                        Learn More
+                        Lernen
                     </Button>
                 </CardActions>
             </Card>

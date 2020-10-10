@@ -73,7 +73,7 @@ export default class Daily extends PureComponent {
   render() {
     return (
         <React.Fragment>
-            <Title>Heute</Title>
+            <Title>Aktueller Fortschritt</Title>
     <ResponsiveContainer>
         <PieChart>
             <Pie
