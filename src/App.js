@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Dashboard from './Dashboard';
 import Name from './Name';
-import {HashRouter, Route, Switch, BrowserRouter as Router} from "react-router-dom";
+import {Route, Switch, BrowserRouter as Router} from "react-router-dom";
 import VideoComponent from './VideoComponent';
 import DiscreteSlider from './Slider.js'
 import DoneComponent from './DoneComponent'
