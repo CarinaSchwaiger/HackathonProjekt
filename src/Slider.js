@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
+import Button from "@material-ui/core/Button";
+import {Link as RouterLink} from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -46,6 +48,13 @@ export default function DiscreteSlider() {
         min={1}
         max={3}
       />
+      <RouterLink to="/lektion" style={{ textDecoration: 'none', color: "#000000" }}>
+        <Button
+            variant = "outlined"
+        >
+          Weiter
+        </Button>
+      </RouterLink>
     </div>
   );
 }

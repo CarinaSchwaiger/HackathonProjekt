@@ -17,6 +17,7 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
+import { Link as RouterLink} from "react-router-dom";
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
@@ -25,6 +26,8 @@ import Chart from './Chart';
 import Daily from './Daily';
 import Orders from './Orders';
 import Header from './Header';
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -145,33 +148,35 @@ export default function Name() {
       <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
         <form className={classes.root} noValidate autoComplete="off">
+            <div>
             <p>
                 Bitte gib deinen Vornamen und deinen Wohnort an.
             </p>
-            <div>
+                <p>
             <TextField
                 required
                 id="name"
-                label="Required"
                 placeholder="Vorname"
                 variant="outlined"
                 onChange = {(event) =>  setName(event.target.value)}
             />
+                </p>
+                <p>
             <TextField
                 required
                 id ="place"
-                label="Required"
                 placeholder="Wohnort"
                 variant="outlined"
                 onChange = {(event) =>  setPlace(event.target.value)}
             />
-            <Button 
-                onClick={() => { alert(name+ place) }}
-                variant = "outlined"
-                
-            >
-                Weiter
-            </Button>    
+                </p>
+            <RouterLink to="/lektion" style={{ textDecoration: 'none', color: "#000000" }}>
+                <Button
+                    variant = "outlined"
+                >
+                    Weiter
+                </Button>
+            </RouterLink>
             </div>
         </form>
         </Container>
