@@ -149,9 +149,9 @@ export default function Name() {
         <Container maxWidth="lg" className={classes.container}>
         <form className={classes.root} noValidate autoComplete="off">
             <div>
-            <p>
+            <h3>
                 Bitte gib deinen Vornamen und deinen Wohnort an.
-            </p>
+            </h3>
                 <p>
             <TextField
                 required
