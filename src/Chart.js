@@ -1,54 +1,57 @@
 import React from 'react';
 import { useTheme } from '@material-ui/core/styles';
-import { LineChart, Line, XAxis, YAxis, Label, ResponsiveContainer } from 'recharts';
+import {
+  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
+} from 'recharts';
 import Title from './Title';
 
-// Generate Sales Data
-function createData(time, amount) {
-  return { time, amount };
-}
-
 const data = [
-  createData('00:00', 0),
-  createData('03:00', 300),
-  createData('06:00', 600),
-  createData('09:00', 800),
-  createData('12:00', 1500),
-  createData('15:00', 2000),
-  createData('18:00', 2400),
-  createData('21:00', 2400),
-  createData('24:00', undefined),
+  {
+    name: '5. Oktober', Einsteigerkurs: 4000, Fortgeschritten: 2400, amt: 2400,
+  },
+  {
+    name: '6. Oktober', Einsteigerkurs: 3000, Fortgeschritten: 1398, amt: 2210,
+  },
+  {
+    name: '7. Oktober', Einsteigerkurs: 2000, Fortgeschritten: 9800, amt: 2290,
+  },
+  {
+    name: '8. Oktober', Einsteigerkurs: 2780, Fortgeschritten: 3908, amt: 2000,
+  },
+  {
+    name: '9. Oktober', Einsteigerkurs: 1890, Fortgeschritten: 4800, amt: 2181,
+  },
+  {
+    name: '10. Oktober', Einsteigerkurs: 2390, Fortgeschritten: 3800, amt: 2500,
+  },
+  {
+    name: '11. Oktober', Einsteigerkurs: 3490, Fortgeschritten: 4300, amt: 2100,
+  },
 ];
-
 export default function Chart() {
   const theme = useTheme();
 
   return (
     <React.Fragment>
-      <Title>Today</Title>
+      <Title>Lernerfolg</Title>
       <ResponsiveContainer>
-        <LineChart
-          data={data}
-          margin={{
-            top: 16,
-            right: 16,
-            bottom: 0,
-            left: 24,
-          }}
-        >
-          <XAxis dataKey="time" stroke={theme.palette.text.secondary} />
-          <YAxis stroke={theme.palette.text.secondary}>
-            <Label
-              angle={270}
-              position="left"
-              style={{ textAnchor: 'middle', fill: theme.palette.text.primary }}
-            >
-              Sales ($)
-            </Label>
-          </YAxis>
-          <Line type="monotone" dataKey="amount" stroke={theme.palette.primary.main} dot={false} />
-        </LineChart>
+      <BarChart
+        width={500}
+        height={300}
+        data={data}
+        margin={{
+          top: 5, right: 30, left: 20, bottom: 5,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="name" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="Fortgeschritten" fill="#8884d8" />
+        <Bar dataKey="Einsteigerkurs" fill="#82ca9d" />
+      </BarChart>
       </ResponsiveContainer>
     </React.Fragment>
-  );
+  )
 }

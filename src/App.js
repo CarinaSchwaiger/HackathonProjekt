@@ -1,23 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Component from './Component';
+import Dashboard from './Dashboard';
+import Name from './Name';
+import {HashRouter, Route, Switch, BrowserRouter as Router} from "react-router-dom";
 
 function App() {
+  const [page, setPage] = React.useState(0);
+
+  const nextPage = () => {
+    setPage(page + 1);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Component/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+      <Route exact path="/" component={Dashboard}/>
+      <Route path="/lernen" component={Name}/>
+      </Switch>
+      </Router>
     </div>
   );
 }
