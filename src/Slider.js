@@ -13,6 +13,21 @@ function valuetext(value) {
   return `${value}°C`;
 }
 
+const marks = [
+  {
+    value: 1,
+    label: 'Verbesserungswürdig',
+  },
+  {
+    value: 2,
+    label: 'Zufrieden',
+  },
+  {
+    value: 3,
+    label: 'Sehr gut',
+  },
+];
+
 export default function DiscreteSlider() {
   const classes = useStyles();
 
@@ -22,14 +37,14 @@ export default function DiscreteSlider() {
         Lernerfolg
       </Typography>
       <Slider
-        defaultValue={3}
+        defaultValue={2}
         getAriaValueText={valuetext}
         aria-labelledby="discrete-slider"
-        valueLabelDisplay="auto"
+        valueLabelDisplay="on"
         step={1}
-        marks
+        marks = {marks}
         min={1}
-        max={5}
+        max={3}
       />
     </div>
   );
