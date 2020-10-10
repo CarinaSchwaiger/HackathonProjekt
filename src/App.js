@@ -32,7 +32,7 @@ function App() {
         <Switch>
       <Route exact path="/" component={Dashboard}/>
       <Route path="/lernen" component={Name}/>
-      { counter >= 4 && <Route path="/lektion" component={DoneComponent}/> }
+      { counter >= 4 && <Route path="/lektion" component={FinalScreen}/> }
       <Route path="/lektion" render={(props) => {
           return counter <= 3 ?  <VideoComponent videoUrl={lektionen[counter].url} word={lektionen[counter].name}
                               onChange={incrementCounter()}/> : <FinalScreen/>
