@@ -3,7 +3,7 @@ import { PieChart, Pie, Sector, ResponsiveContainer } from 'recharts';
 import Title from './Title';
 
 const data = [
-  { name: 'Eintsteigerkurs', value: 500 },
+  { name: 'Einsteigerkurs', value: 500 },
   { name: 'Fortgeschritten', value: 200 },
   { name: 'Offen Einst.', value: 300 },
   { name: 'Offen Fort.', value: 600 },
