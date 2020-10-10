@@ -12,30 +12,37 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-  
+
 export default function Name() {
     const classes = useStyles();
+    const [name, setName] = React.useState();
+    const [place, setPlace] = React.useState();
     return (
     <form className={classes.root} noValidate autoComplete="off">
+        <p>
+            Bitte gib deinen Vornamen und deinen Wohnort an.
+        </p>
         <div>
         <TextField
             required
             id="name"
             label="Required"
-            defaultValue="Vorname"
+            placeholder="Vorname"
             variant="outlined"
+            onChange = {(event) =>  setName(event.target.value)}
         />
         <TextField
             required
             id ="place"
             label="Required"
-            defaultValue="Wohnort"
+            placeholder="Wohnort"
             variant="outlined"
-            onChange = {(event) => }
+            onChange = {(event) =>  setPlace(event.target.value)}
         />
         <Button 
-            onClick={() => {  }}
+            onClick={() => { alert(name+ place) }}
             variant = "outlined"
+            
         >
             Weiter
         </Button>    
