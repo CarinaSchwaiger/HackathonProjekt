@@ -5,6 +5,7 @@ import Name from './Name';
 import {HashRouter, Route, Switch, BrowserRouter as Router} from "react-router-dom";
 import VideoComponent from './VideoComponent';
 import DiscreteSlider from './Slider.js'
+import DoneComponent from './DoneComponent'
 
 const videoIchBinAnna = 'https://northeurope1-mediap.svc.ms/transform/videomanifest?provider=spo&inputFormat=mp4&cs=fFNQTw&docid=https%3A%2F%2Fhspforzheimde-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!LqCjXtrAdku-xl4f0chZIqA0sTdh5GVHoKLifIoJ4V5r4bCqYTd8R59DrxRJRRmL%2Fitems%2F01SDZLZRWA7EPXFFEP4NHK7CVPMGOZRTS5%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvaHNwZm9yemhlaW1kZS1teS5zaGFyZXBvaW50LmNvbUBhOGM1YWIwNy1jZTNkLTRhZDgtOWU4MS01OTc4NzU5M2VmY2QiLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNjAyMzQyMDAwIiwiZXhwIjoiMTYwMjM2MzYwMCIsImVuZHBvaW50dXJsIjoiSVZlUnlQYlFXdVZEZFRxZlErNDhDUjNMaFpoT3RzdndxY1dwZy9WWnNlcz0iLCJlbmRwb2ludHVybExlbmd0aCI6IjEyMyIsImlzbG9vcGJhY2siOiJUcnVlIiwidmVyIjoiaGFzaGVkcHJvb2Z0b2tlbiIsInNpdGVpZCI6Ik5XVmhNMkV3TW1VdFl6QmtZUzAwWWpjMkxXSmxZell0TldVeFptUXhZemcxT1RJeSIsIm5hbWVpZCI6IjAjLmZ8bWVtYmVyc2hpcHx1cm4lM2FzcG8lM2Fhbm9uIzIxNzc1ZWFiMjEyMDk0NTJmNDUwZmY3ZTNhMTdkNjkzMzUwYWYwZDhkYmFhM2MyYWU0ZDgwMzM3YzIyYjJjZmMiLCJuaWkiOiJtaWNyb3NvZnQuc2hhcmVwb2ludCIsImlzdXNlciI6InRydWUiLCJjYWNoZWtleSI6IjBoLmZ8bWVtYmVyc2hpcHx1cm4lM2FzcG8lM2Fhbm9uIzIxNzc1ZWFiMjEyMDk0NTJmNDUwZmY3ZTNhMTdkNjkzMzUwYWYwZDhkYmFhM2MyYWU0ZDgwMzM3YzIyYjJjZmMiLCJzaGFyaW5naWQiOiJJU1V6cldHK1cwZXNVRUI3YmYrMkR3IiwidHQiOiIwIiwidXNlUGVyc2lzdGVudENvb2tpZSI6IjIifQ.anAveks1M1p3SkZsTWlWZGl4dVV2L2RvaFBLb2xqY0RMQzNVOTJ6QW8vWT0&cTag=%22c%3A%7B721FF9C0-8F94-4EE3-AF8A-AF619D98CE5D%7D%2C1%22&action=Access&part=index&format=hls&useScf=True&manifestMetadata=&App=OneDriveWebVideo'
 const videoPforzheim = 'https://northeurope1-mediap.svc.ms/transform/videomanifest?provider=spo&inputFormat=mp4&cs=fFNQTw&docid=https%3A%2F%2Fhspforzheimde-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!LqCjXtrAdku-xl4f0chZIqA0sTdh5GVHoKLifIoJ4V5r4bCqYTd8R59DrxRJRRmL%2Fitems%2F01SDZLZRQE7OSU6DUZPFC2VLR3BDS4GSH3%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvaHNwZm9yemhlaW1kZS1teS5zaGFyZXBvaW50LmNvbUBhOGM1YWIwNy1jZTNkLTRhZDgtOWU4MS01OTc4NzU5M2VmY2QiLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNjAyMzQyMDAwIiwiZXhwIjoiMTYwMjM2MzYwMCIsImVuZHBvaW50dXJsIjoiSVZlUnlQYlFXdVZEZFRxZlErNDhDUjNMaFpoT3RzdndxY1dwZy9WWnNlcz0iLCJlbmRwb2ludHVybExlbmd0aCI6IjEyMyIsImlzbG9vcGJhY2siOiJUcnVlIiwidmVyIjoiaGFzaGVkcHJvb2Z0b2tlbiIsInNpdGVpZCI6Ik5XVmhNMkV3TW1VdFl6QmtZUzAwWWpjMkxXSmxZell0TldVeFptUXhZemcxT1RJeSIsIm5hbWVpZCI6IjAjLmZ8bWVtYmVyc2hpcHx1cm4lM2FzcG8lM2Fhbm9uIzIxNzc1ZWFiMjEyMDk0NTJmNDUwZmY3ZTNhMTdkNjkzMzUwYWYwZDhkYmFhM2MyYWU0ZDgwMzM3YzIyYjJjZmMiLCJuaWkiOiJtaWNyb3NvZnQuc2hhcmVwb2ludCIsImlzdXNlciI6InRydWUiLCJjYWNoZWtleSI6IjBoLmZ8bWVtYmVyc2hpcHx1cm4lM2FzcG8lM2Fhbm9uIzIxNzc1ZWFiMjEyMDk0NTJmNDUwZmY3ZTNhMTdkNjkzMzUwYWYwZDhkYmFhM2MyYWU0ZDgwMzM3YzIyYjJjZmMiLCJzaGFyaW5naWQiOiJJU1V6cldHK1cwZXNVRUI3YmYrMkR3IiwidHQiOiIwIiwidXNlUGVyc2lzdGVudENvb2tpZSI6IjIifQ.anAveks1M1p3SkZsTWlWZGl4dVV2L2RvaFBLb2xqY0RMQzNVOTJ6QW8vWT0&cTag=%22c%3A%7B4FA5FB04-990E-4579-AAAE-3B08E5C348FB%7D%2C1%22&action=Access&part=index&format=hls&useScf=True&manifestMetadata=&App=OneDriveWebVideo'
@@ -31,30 +32,18 @@ function App() {
         <Switch>
       <Route exact path="/" component={Dashboard}/>
       <Route path="/lernen" component={Name}/>
+      { counter >= 4 && <Route path="/lektion" component={DoneComponent}/> }
       <Route path="/lektion" render={(props) => {
-          if (counter <= 3) {
-              <VideoComponent videoUrl={lektionen[counter].url} word={lektionen[counter].name}
-                              onChange={incrementCounter()}/>
-          } else {
-              <Component/>
-          }
+          return ( counter <= 3 ?
+                  <VideoComponent videoUrl={lektionen[counter].url} word={lektionen[counter].name}
+                                  onChange={incrementCounter()}/>
+                  : <DoneComponent/>
+          )
       }
       }/>
       <Route path="/feedback" component={DiscreteSlider}/>
       </Switch>
       </Router>
-      {/*<header className="App-header">
-          <Dashboard/>
-          <Name/>
-        <VideoComponent />
-        <DiscreteSlider/>
-        <VideoComponent videoUrl={videoPforzheim} word="Ich wohne in Pforzheim"/>
-        <DiscreteSlider/>
-        <VideoComponent videoUrl={videoVielenDank} word="Vielen Dank"/>
-        <DiscreteSlider/>
-        <VideoComponent videoUrl={videoWillkommen} word="Willkommen"/>
-        <DiscreteSlider/>
-      </header>*/}
     </div>
   );
 }
