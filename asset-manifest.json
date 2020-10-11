@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/hackathonprojekt/static/css/main.39ef33ff.chunk.css",
-    "main.js": "/hackathonprojekt/static/js/main.7beed7f2.chunk.js",
-    "main.js.map": "/hackathonprojekt/static/js/main.7beed7f2.chunk.js.map",
-    "runtime-main.js": "/hackathonprojekt/static/js/runtime-main.db040833.js",
-    "runtime-main.js.map": "/hackathonprojekt/static/js/runtime-main.db040833.js.map",
-    "static/css/2.a5277431.chunk.css": "/hackathonprojekt/static/css/2.a5277431.chunk.css",
-    "static/js/2.dabac5b1.chunk.js": "/hackathonprojekt/static/js/2.dabac5b1.chunk.js",
-    "static/js/2.dabac5b1.chunk.js.map": "/hackathonprojekt/static/js/2.dabac5b1.chunk.js.map",
-    "index.html": "/hackathonprojekt/index.html",
-    "precache-manifest.d82cfd1f6a300624886dadccbf305770.js": "/hackathonprojekt/precache-manifest.d82cfd1f6a300624886dadccbf305770.js",
-    "service-worker.js": "/hackathonprojekt/service-worker.js",
-    "static/css/2.a5277431.chunk.css.map": "/hackathonprojekt/static/css/2.a5277431.chunk.css.map",
-    "static/css/main.39ef33ff.chunk.css.map": "/hackathonprojekt/static/css/main.39ef33ff.chunk.css.map",
-    "static/js/2.dabac5b1.chunk.js.LICENSE.txt": "/hackathonprojekt/static/js/2.dabac5b1.chunk.js.LICENSE.txt",
-    "static/media/pic.jpg": "/hackathonprojekt/static/media/pic.bc364610.jpg"
+    "main.css": "/verbalize/static/css/main.39ef33ff.chunk.css",
+    "main.js": "/verbalize/static/js/main.8d36a2b9.chunk.js",
+    "main.js.map": "/verbalize/static/js/main.8d36a2b9.chunk.js.map",
+    "runtime-main.js": "/verbalize/static/js/runtime-main.d5c5bc82.js",
+    "runtime-main.js.map": "/verbalize/static/js/runtime-main.d5c5bc82.js.map",
+    "static/css/2.a5277431.chunk.css": "/verbalize/static/css/2.a5277431.chunk.css",
+    "static/js/2.dabac5b1.chunk.js": "/verbalize/static/js/2.dabac5b1.chunk.js",
+    "static/js/2.dabac5b1.chunk.js.map": "/verbalize/static/js/2.dabac5b1.chunk.js.map",
+    "index.html": "/verbalize/index.html",
+    "precache-manifest.acbd9405e4078769974afbbf762ad0cc.js": "/verbalize/precache-manifest.acbd9405e4078769974afbbf762ad0cc.js",
+    "service-worker.js": "/verbalize/service-worker.js",
+    "static/css/2.a5277431.chunk.css.map": "/verbalize/static/css/2.a5277431.chunk.css.map",
+    "static/css/main.39ef33ff.chunk.css.map": "/verbalize/static/css/main.39ef33ff.chunk.css.map",
+    "static/js/2.dabac5b1.chunk.js.LICENSE.txt": "/verbalize/static/js/2.dabac5b1.chunk.js.LICENSE.txt",
+    "static/media/pic.jpg": "/verbalize/static/media/pic.bc364610.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.db040833.js",
+    "static/js/runtime-main.d5c5bc82.js",
     "static/css/2.a5277431.chunk.css",
     "static/js/2.dabac5b1.chunk.js",
     "static/css/main.39ef33ff.chunk.css",
-    "static/js/main.7beed7f2.chunk.js"
+    "static/js/main.8d36a2b9.chunk.js"
   ]
 }
