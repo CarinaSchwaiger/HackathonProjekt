@@ -134,7 +134,10 @@ export default function FinalScreen() {
           width={width}
           height={height}
         />
-        <Title>Gratulation</Title>
+        <Title><div style={{fontSize: '30px'}}>Herzlichen Glückwunsch</div></Title>
+        <p style={{fontFamily: 'Roboto', fontSize: '20px'}}>
+          Du hast die erste Lektion erfolgreich gemeistert !
+        </p>
         </Container>
         </main>
         </div>
