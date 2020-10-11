@@ -14,6 +14,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { mainListItems, secondaryListItems } from './listItems';
 import Header from './Header';
 import image from './pic.jpg';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -138,7 +139,8 @@ export default function Name() {
       <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
         <form className={classes.root} noValidate autoComplete="off">
-            <div>
+        <Grid container spacing={3}>
+            <Grid item lg={12}>
             <img src={image}/>
             <h3>
                 Hallo zur ersten Lektion !
@@ -168,7 +170,8 @@ export default function Name() {
                     Weiter
                 </Button>
             </RouterLink>
-            </div>
+            </Grid>
+            </Grid>
         </form>
         </Container>
         </main>
