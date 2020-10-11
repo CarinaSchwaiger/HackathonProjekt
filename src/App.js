@@ -8,7 +8,7 @@ import FinalScreen from './FinalScreen';
 
 const lektionen = [{name : 'Ich bin Anna',
                         url : process.env.PUBLIC_URL + '/anna.mp4'},
-    {name : 'Ich wohne in Pforzheim',
+    {name : 'Ich bin ... und wohne in Pforzheim',
         url : process.env.PUBLIC_URL + '/pforzheim.mp4'},
     {name : 'Vielen Dank',
         url: process.env.PUBLIC_URL + '/danke.mp4'},

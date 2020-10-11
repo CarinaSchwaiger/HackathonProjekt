@@ -8,6 +8,8 @@ import IconButton from '@material-ui/core/IconButton';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MenuIcon from '@material-ui/icons/Menu';
 import Badge from '@material-ui/core/Badge';
+import Avatar from '@material-ui/core/Avatar';
+
 
 export default function Header(props) {
     return (
@@ -25,6 +27,7 @@ export default function Header(props) {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={props.classes.title}>
             {"Verbalize " + props.title}
           </Typography>
+          <Avatar alt="Anna" src={process.env.PUBLIC_URL + "/avatar.JPG"} />
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
               <NotificationsIcon />

@@ -16,10 +16,10 @@ import Header from './Header';
 import image from './pic.jpg';
 import Grid from '@material-ui/core/Grid';
 
+
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
-      horizontalAlign: 'center',
     },
     toolbar: {
       paddingRight: 24, // keep right padding when drawer closed
@@ -94,9 +94,8 @@ const useStyles = makeStyles((theme) => ({
     fixedHeight: {
       height: 300,
     },
-    div: {
-      alignItems: 'center',
-      padding: '0 8px',
+    hello: {
+      fontFamily: 'Roboto',
     },
   }));
 
@@ -104,7 +103,7 @@ const drawerWidth = 240;
 
 
 export default function Name() {
-    const classes = useStyles();
+  const classes = useStyles();
     const [name, setName] = React.useState();
     const [place, setPlace] = React.useState();
     const [open, setOpen] = React.useState(true);
@@ -142,15 +141,16 @@ export default function Name() {
         <Grid container spacing={3}>
             <Grid item lg={12}>
             <img src={image}/>
-            <h3>
-                Hallo zur ersten Lektion !
+            <h3 className = {classes.hello} style={{ color: '#1d2d60', fontSize: '30px'}} >
+                Hallo zur ersten Lektion, Anna ! Lerne dich vorzustellen.
             </h3>
                 <p>
             <TextField
                 required
                 id="name"
-                placeholder="Vorname"
+                label="Vorname"
                 variant="outlined"
+                defaultValue="Anna"
                 onChange = {(event) =>  setName(event.target.value)}
             />
                 </p>
@@ -158,16 +158,18 @@ export default function Name() {
             <TextField
                 required
                 id ="place"
-                placeholder="Wohnort"
+                label="Wohnort"
                 variant="outlined"
+                placeholder="Pforzheim"
                 onChange = {(event) =>  setPlace(event.target.value)}
             />
                 </p>
             <RouterLink to="/lektion" style={{ textDecoration: 'none', color: "#000000" }}>
                 <Button
                     variant = "outlined"
+                    style = {{backgroundColor: '#ffbc47'}}
                 >
-                    Weiter
+                  Weiter
                 </Button>
             </RouterLink>
             </Grid>

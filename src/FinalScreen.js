@@ -13,6 +13,7 @@ import Container from '@material-ui/core/Container';
 import List from '@material-ui/core/List';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { mainListItems, secondaryListItems } from './listItems';
+import Title from './Title';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -133,7 +134,10 @@ export default function FinalScreen() {
           width={width}
           height={height}
         />
-        <h2>Gratulation</h2>
+        <Title><div style={{fontSize: '30px'}}>Herzlichen Glückwunsch</div></Title>
+        <p style={{fontFamily: 'Roboto', fontSize: '20px'}}>
+          Du hast die erste Lektion erfolgreich gemeistert !
+        </p>
         </Container>
         </main>
         </div>
