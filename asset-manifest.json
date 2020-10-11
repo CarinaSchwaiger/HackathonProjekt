@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/HackathonProjekt/static/css/main.39ef33ff.chunk.css",
-    "main.js": "/HackathonProjekt/static/js/main.9b6f15e7.chunk.js",
-    "main.js.map": "/HackathonProjekt/static/js/main.9b6f15e7.chunk.js.map",
-    "runtime-main.js": "/HackathonProjekt/static/js/runtime-main.e24ea784.js",
-    "runtime-main.js.map": "/HackathonProjekt/static/js/runtime-main.e24ea784.js.map",
-    "static/css/2.a5277431.chunk.css": "/HackathonProjekt/static/css/2.a5277431.chunk.css",
-    "static/js/2.dabac5b1.chunk.js": "/HackathonProjekt/static/js/2.dabac5b1.chunk.js",
-    "static/js/2.dabac5b1.chunk.js.map": "/HackathonProjekt/static/js/2.dabac5b1.chunk.js.map",
-    "index.html": "/HackathonProjekt/index.html",
-    "precache-manifest.c2d2b6999f7291c027d8e4834ed2b0eb.js": "/HackathonProjekt/precache-manifest.c2d2b6999f7291c027d8e4834ed2b0eb.js",
-    "service-worker.js": "/HackathonProjekt/service-worker.js",
-    "static/css/2.a5277431.chunk.css.map": "/HackathonProjekt/static/css/2.a5277431.chunk.css.map",
-    "static/css/main.39ef33ff.chunk.css.map": "/HackathonProjekt/static/css/main.39ef33ff.chunk.css.map",
-    "static/js/2.dabac5b1.chunk.js.LICENSE.txt": "/HackathonProjekt/static/js/2.dabac5b1.chunk.js.LICENSE.txt",
-    "static/media/pic.jpg": "/HackathonProjekt/static/media/pic.bc364610.jpg"
+    "main.css": "/hackathonprojekt/static/css/main.39ef33ff.chunk.css",
+    "main.js": "/hackathonprojekt/static/js/main.7beed7f2.chunk.js",
+    "main.js.map": "/hackathonprojekt/static/js/main.7beed7f2.chunk.js.map",
+    "runtime-main.js": "/hackathonprojekt/static/js/runtime-main.db040833.js",
+    "runtime-main.js.map": "/hackathonprojekt/static/js/runtime-main.db040833.js.map",
+    "static/css/2.a5277431.chunk.css": "/hackathonprojekt/static/css/2.a5277431.chunk.css",
+    "static/js/2.dabac5b1.chunk.js": "/hackathonprojekt/static/js/2.dabac5b1.chunk.js",
+    "static/js/2.dabac5b1.chunk.js.map": "/hackathonprojekt/static/js/2.dabac5b1.chunk.js.map",
+    "index.html": "/hackathonprojekt/index.html",
+    "precache-manifest.d82cfd1f6a300624886dadccbf305770.js": "/hackathonprojekt/precache-manifest.d82cfd1f6a300624886dadccbf305770.js",
+    "service-worker.js": "/hackathonprojekt/service-worker.js",
+    "static/css/2.a5277431.chunk.css.map": "/hackathonprojekt/static/css/2.a5277431.chunk.css.map",
+    "static/css/main.39ef33ff.chunk.css.map": "/hackathonprojekt/static/css/main.39ef33ff.chunk.css.map",
+    "static/js/2.dabac5b1.chunk.js.LICENSE.txt": "/hackathonprojekt/static/js/2.dabac5b1.chunk.js.LICENSE.txt",
+    "static/media/pic.jpg": "/hackathonprojekt/static/media/pic.bc364610.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e24ea784.js",
+    "static/js/runtime-main.db040833.js",
     "static/css/2.a5277431.chunk.css",
     "static/js/2.dabac5b1.chunk.js",
     "static/css/main.39ef33ff.chunk.css",
-    "static/js/main.9b6f15e7.chunk.js"
+    "static/js/main.7beed7f2.chunk.js"
   ]
 }
