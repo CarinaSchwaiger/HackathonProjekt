@@ -143,14 +143,15 @@ export default function Name() {
             <Grid item lg={12}>
             <img src={image}/>
             <h3>
-                Hallo zur ersten Lektion !
+                Hallo zur ersten Lektion, Anna! Lerne dich vorzustellen.
             </h3>
                 <p>
             <TextField
                 required
                 id="name"
-                placeholder="Vorname"
+                label="Vorname"
                 variant="outlined"
+                placeholder="Anna"
                 onChange = {(event) =>  setName(event.target.value)}
             />
                 </p>
@@ -158,8 +159,9 @@ export default function Name() {
             <TextField
                 required
                 id ="place"
-                placeholder="Wohnort"
+                label="Wohnort"
                 variant="outlined"
+                placeholder="Pforzheim"
                 onChange = {(event) =>  setPlace(event.target.value)}
             />
                 </p>
