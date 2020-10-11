@@ -34,7 +34,6 @@ function App() {
                               onChange={incrementCounter()}/> : <FinalScreen/>
       }
       }/>
-      <Route path="/feedback" component={DiscreteSlider}/>
       </Switch>
       </Router>
     </div>

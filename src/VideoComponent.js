@@ -16,6 +16,8 @@ import Container from '@material-ui/core/Container';
 import List from '@material-ui/core/List';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { mainListItems, secondaryListItems } from './listItems';
+import DiscreteSlider from "./Slider";
+import Grid from "@material-ui/core/Grid";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -110,44 +112,51 @@ export default function Video(props) {
     };
     return (
         <div className={classes.root}>
-        <CssBaseline />
-        <Header classes={classes} open={open} handleDrawerOpen={handleDrawerOpen} title={"Lernen"}/>
-        <Drawer
-          variant="permanent"
-          classes={{
-            paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose),
-          }}
-          open={open}
-        >
-          <div className={classes.toolbarIcon}>
-            <IconButton onClick={handleDrawerClose}>
-              <ChevronLeftIcon />
-            </IconButton>
-          </div>
-          <Divider />
-          <List>{mainListItems}</List>
-          <Divider />
-          <List>{secondaryListItems}</List>
-        </Drawer>
-        <main className={classes.content}>
-          <div className={classes.appBarSpacer} />
-          <Container maxWidth="lg" className={classes.container}>
-            <h1>Deine nächste Gebärde: {props.word}</h1>
-            <Player
-                playsInline
-                src={props.videoUrl}
-                width="70%"
-            />
-            <p>
-                <RouterLink to="/feedback" style={{ textDecoration: 'none', color: "#000000" }}>
-                    <Button
-                        variant = "outlined"
-                    >
-                        Ich bin fertig!
-                    </Button>
-                </RouterLink>
-            </p>
-            </Container>
+            <CssBaseline/>
+            <Header classes={classes} open={open} handleDrawerOpen={handleDrawerOpen} title={"Lernen"}/>
+            <Drawer
+                variant="permanent"
+                classes={{
+                    paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose),
+                }}
+                open={open}
+            >
+                <div className={classes.toolbarIcon}>
+                    <IconButton onClick={handleDrawerClose}>
+                        <ChevronLeftIcon/>
+                    </IconButton>
+                </div>
+                <Divider/>
+                <List>{mainListItems}</List>
+                <Divider/>
+                <List>{secondaryListItems}</List>
+            </Drawer>
+            <main className={classes.content}>
+                <div className={classes.appBarSpacer}/>
+                <Container maxWidth="lg" className={classes.container}>
+                    <h1>Deine nächste Gebärde: {props.word}</h1>
+                    <Player
+                        playsInline
+                        src={props.videoUrl}
+                        width="70%"
+                    />
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }}>
+                        <DiscreteSlider/>
+                    </div>
+                    <p>
+                        <RouterLink to="/lektion" style={{textDecoration: 'none', color: "#000000"}}>
+                            <Button
+                                variant="outlined"
+                            >
+                                Ich bin fertig!
+                            </Button>
+                        </RouterLink>
+                    </p>
+                </Container>
             </main>
         </div>
     )
