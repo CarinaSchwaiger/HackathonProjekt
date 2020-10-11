@@ -11,7 +11,7 @@ import Badge from '@material-ui/core/Badge';
 
 export default function Header(props) {
     return (
-        <AppBar position="absolute" className={clsx(props.classes.appBar, props.open && props.classes.appBarShift)}>
+        <AppBar position="absolute" style={{ background: '#1d2d60' }} className={clsx(props.classes.appBar, props.open && props.classes.appBarShift)}>
         <Toolbar className={props.classes.toolbar}>
           <IconButton
             edge="start"
