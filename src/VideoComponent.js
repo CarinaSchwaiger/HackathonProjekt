@@ -17,8 +17,8 @@ import List from '@material-ui/core/List';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { mainListItems, secondaryListItems } from './listItems';
 import DiscreteSlider from "./Slider";
-import Grid from "@material-ui/core/Grid";
-
+import Collapsible from "react-collapsible";
+import './Collapsible.css';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -140,6 +140,10 @@ export default function Video(props) {
                         src={props.videoUrl}
                         width="70%"
                     />
+                    <Collapsible trigger="Bildertutorial">
+                        <p>This is the collapsible content. It can be any element or React component you like.</p>
+                        <p>It can even be another Collapsible component. Check out the next section!</p>
+                    </Collapsible>
                     <div style={{
                         display: 'flex',
                         alignItems: 'center',

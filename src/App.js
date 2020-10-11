@@ -4,7 +4,6 @@ import Dashboard from './Dashboard';
 import Name from './Name';
 import {Route, Switch, BrowserRouter as Router} from "react-router-dom";
 import VideoComponent from './VideoComponent';
-import DiscreteSlider from './Slider.js';
 import FinalScreen from './FinalScreen';
 
 const lektionen = [{name : 'Ich bin Anna',
