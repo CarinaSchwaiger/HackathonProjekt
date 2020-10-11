@@ -20,7 +20,6 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
-      horizontalAlign: 'center',
     },
     toolbar: {
       paddingRight: 24, // keep right padding when drawer closed
@@ -94,10 +93,6 @@ const useStyles = makeStyles((theme) => ({
     },
     fixedHeight: {
       height: 300,
-    },
-    div: {
-      alignItems: 'center',
-      padding: '0 8px',
     },
     hello: {
       fontFamily: 'Roboto',
