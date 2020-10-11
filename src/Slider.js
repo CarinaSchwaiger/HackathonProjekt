@@ -35,7 +35,7 @@ export default function DiscreteSlider() {
 
   return (
     <div className={classes.root}>
-      <Typography id="discrete-slider" gutterBottom>
+      <Typography id="discrete-slider" gutterBottom style={{padding: '30px'}}>
         Lernerfolg
       </Typography>
       <Slider

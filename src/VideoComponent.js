@@ -140,10 +140,12 @@ export default function Video(props) {
                         src={props.videoUrl}
                         width="70%"
                     />
-                    <Collapsible trigger="Bildertutorial">
+                    <div style={{padding: '10px'}}>
+                    <Collapsible trigger="Bildertutorial" >
                         <p>This is the collapsible content. It can be any element or React component you like.</p>
                         <p>It can even be another Collapsible component. Check out the next section!</p>
                     </Collapsible>
+                    </div>
                     <div style={{
                         display: 'flex',
                         alignItems: 'center',
