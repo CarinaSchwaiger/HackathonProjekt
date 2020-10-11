@@ -142,14 +142,8 @@ export default function Video(props) {
                         src={props.videoUrl}
                         width="70%"
                     />
-<<<<<<< HEAD
-                    <Collapsible trigger="Bildertutorial">
-=======
                     <div style={{padding: '10px'}}>
                     <Collapsible trigger="Bildertutorial" >
-                        <p>This is the collapsible content. It can be any element or React component you like.</p>
->>>>>>> 3c03648262c41f966b320d67af822e78598f72e3
-                        <p>It can even be another Collapsible component. Check out the next section!</p>
                         <Pictures counter_pic={props.counter_img}/>
                     </Collapsible>
                     </div>
