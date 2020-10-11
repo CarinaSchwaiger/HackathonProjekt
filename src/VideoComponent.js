@@ -20,6 +20,8 @@ import DiscreteSlider from "./Slider";
 import Collapsible from "react-collapsible";
 import './Collapsible.css';
 
+import Pictures from "./Pictures"
+
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
@@ -141,8 +143,8 @@ export default function Video(props) {
                         width="70%"
                     />
                     <Collapsible trigger="Bildertutorial">
-                        <p>This is the collapsible content. It can be any element or React component you like.</p>
                         <p>It can even be another Collapsible component. Check out the next section!</p>
+                        <Pictures counter_pic={props.counter_img}/>
                     </Collapsible>
                     <div style={{
                         display: 'flex',
