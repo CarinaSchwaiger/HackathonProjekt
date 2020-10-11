@@ -30,7 +30,7 @@ function App() {
       { counter >= 4 && <Route path="/lektion" component={FinalScreen}/> }
       <Route path="/lektion" render={(props) => {
           return counter <= 3 ?  <VideoComponent videoUrl={lektionen[counter].url} word={lektionen[counter].name}
-                              onChange={incrementCounter()} counter_img={counter} /> : <FinalScreen/>
+                               counter_img={counter} onChange={incrementCounter()}/> : <FinalScreen/>
       }
       }/>
       </Switch>

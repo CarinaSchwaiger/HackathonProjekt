@@ -20,7 +20,17 @@ import DiscreteSlider from "./Slider";
 import Collapsible from "react-collapsible";
 import './Collapsible.css';
 
-import Pictures from "./Pictures"
+const pictures = [{name:'Ich bin A-N-N-A.',
+    url : [process.env.PUBLIC_URL + '/Anna_Ich.png', process.env.PUBLIC_URL + '/Anna_bin.png', process.env.PUBLIC_URL + '/Anna_A.png',
+        process.env.PUBLIC_URL + '/Anna_N.png', process.env.PUBLIC_URL + '/Anna_N.png', process.env.PUBLIC_URL + '/Anna_A.png']},
+    {name: 'Ich bin <Namensschild>. Ich wohne in Pforzheim.',
+        url : [process.env.PUBLIC_URL + '/Pham_Ich.png', process.env.PUBLIC_URL + '/Pham_bin.png', process.env.PUBLIC_URL + '/Pham_Name.png',
+            process.env.PUBLIC_URL + '/Pham_Ich.png', process.env.PUBLIC_URL + '/Pham_wohne.png', process.env.PUBLIC_URL + '/Pham_in.png', process.env.PUBLIC_URL + '/Pham_Pforzheim.png']},
+    {name: 'Vielen Dank!',
+        url : [process.env.PUBLIC_URL + '/Pham_vielen.png', process.env.PUBLIC_URL + '/Pham_Dank.png']},
+    {name: 'Willkommen!',
+        url : [process.env.PUBLIC_URL + '/Pham_willkommen.png']}
+]
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -112,6 +122,8 @@ export default function Video(props) {
     const handleDrawerClose = () => {
         setOpen(false);
     };
+
+    const currentCombo = pictures[props.counter_img].url;
     return (
         <div className={classes.root}>
             <CssBaseline/>
@@ -144,7 +156,14 @@ export default function Video(props) {
                     />
                     <div style={{padding: '10px'}}>
                     <Collapsible trigger="Bildertutorial" >
-                        <Pictures counter_pic={props.counter_img}/>
+                        <div>
+                            <ul>
+                                {currentCombo.map(function (picture_url){
+                                    return <img src={picture_url}/>
+                                })}
+                            </ul>
+                            <p> {pictures[props.counter_img].name}</p>
+                        </div>
                     </Collapsible>
                     </div>
                     <div style={{
