@@ -166,6 +166,17 @@ export default function Video(props) {
                         </div>
                     </Collapsible>
                     </div>
+                    <div style={{padding: '10px'}}>
+                    <Collapsible trigger="Step-By-Step" >
+                        <div>
+                            <p>1. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat <br/>
+                              2. sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren <br/>
+                              3. no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr <br/>
+                              4. sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum <br/>
+                              5. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </Collapsible>
+                    </div>
                     <div style={{
                         display: 'flex',
                         alignItems: 'center',
