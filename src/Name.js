@@ -150,7 +150,7 @@ export default function Name() {
                 id="name"
                 label="Vorname"
                 variant="outlined"
-                placeholder="Anna"
+                defaultValue="Anna"
                 onChange = {(event) =>  setName(event.target.value)}
             />
                 </p>
