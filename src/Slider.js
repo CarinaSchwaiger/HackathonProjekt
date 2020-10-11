@@ -48,13 +48,6 @@ export default function DiscreteSlider() {
         min={1}
         max={3}
       />
-      <RouterLink to="/lektion" style={{ textDecoration: 'none', color: "#000000" }}>
-        <Button
-            variant = "outlined"
-        >
-          Weiter
-        </Button>
-      </RouterLink>
     </div>
   );
 }
