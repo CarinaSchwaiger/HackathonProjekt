@@ -13,10 +13,12 @@ import { Link as RouterLink} from "react-router-dom";
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { mainListItems, secondaryListItems } from './listItems';
 import Header from './Header';
+import image from './pic.jpg';
 
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
+      horizontalAlign: 'center',
     },
     toolbar: {
       paddingRight: 24, // keep right padding when drawer closed
@@ -91,6 +93,10 @@ const useStyles = makeStyles((theme) => ({
     fixedHeight: {
       height: 300,
     },
+    div: {
+      alignItems: 'center',
+      padding: '0 8px',
+    },
   }));
 
 const drawerWidth = 240;
@@ -133,8 +139,9 @@ export default function Name() {
         <Container maxWidth="lg" className={classes.container}>
         <form className={classes.root} noValidate autoComplete="off">
             <div>
+            <img src={image}/>
             <h3>
-                Bitte gib deinen Vornamen und deinen Wohnort an.
+                Hallo zur ersten Lektion !
             </h3>
                 <p>
             <TextField
