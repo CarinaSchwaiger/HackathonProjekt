@@ -16,6 +16,7 @@ import Header from './Header';
 import image from './pic.jpg';
 import Grid from '@material-ui/core/Grid';
 
+
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
@@ -98,13 +99,16 @@ const useStyles = makeStyles((theme) => ({
       alignItems: 'center',
       padding: '0 8px',
     },
+    hello: {
+      fontFamily: 'Roboto',
+    },
   }));
 
 const drawerWidth = 240;
 
 
 export default function Name() {
-    const classes = useStyles();
+  const classes = useStyles();
     const [name, setName] = React.useState();
     const [place, setPlace] = React.useState();
     const [open, setOpen] = React.useState(true);
@@ -142,7 +146,7 @@ export default function Name() {
         <Grid container spacing={3}>
             <Grid item lg={12}>
             <img src={image}/>
-            <h3>
+            <h3 className = {classes.hello} style={{ color: '#1d2d60', fontSize: '30px'}} >
                 Hallo zur ersten Lektion !
             </h3>
                 <p>
@@ -166,8 +170,9 @@ export default function Name() {
             <RouterLink to="/lektion" style={{ textDecoration: 'none', color: "#000000" }}>
                 <Button
                     variant = "outlined"
+                    style = {{backgroundColor: '#ffbc47'}}
                 >
-                    Weiter
+                  Weiter
                 </Button>
             </RouterLink>
             </Grid>
