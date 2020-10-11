@@ -21,11 +21,15 @@ function App() {
   const incrementCounter = () => {
     counter++
   }
+
+  const resetCounter = () => {
+    counter = 0;
+  }
   return (
     <div className="App">
       <Router>
         <Switch>
-      <Route exact path="/" component={Dashboard}/>
+  <Route exact path="/" render={(props) => { return <Dashboard onChange={resetCounter()} /> } }/>
       <Route path="/lernen" component={Name}/>
       { counter >= 4 && <Route path="/lektion" component={FinalScreen}/> }
       <Route path="/lektion" render={(props) => {
